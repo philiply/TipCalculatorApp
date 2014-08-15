@@ -39,17 +39,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/fifteen_percent" />
+                android:text="@string/fifteen_percent"
+                android:onClick="calculateTip"
+                android:tag=".15"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/twenty_percent" />
+                android:text="@string/twenty_percent"
+                android:onClick="calculateTip"
+                android:tag=".20"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/twenty_five_percent" />
+                android:text="@string/twenty_five_percent"
+                android:onClick="calculateTip"
+                android:tag=".25"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -61,7 +67,8 @@
                 android:text="@string/tip_amount_label"/>
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:id="@+id/tip_amount_value"
+                android:layout_height="wrap_content"
                 android:textSize="50dp"
                 android:gravity="right"
                 android:text="0"
@@ -75,13 +82,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/total_label"/>
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="50dp"
                 android:text="0"
-                android:enabled="true"
                 android:id="@+id/final_total"
-                android:editable="false"
                 android:layout_weight="1"
                 android:inputType="numberDecimal" />
         </LinearLayout>
