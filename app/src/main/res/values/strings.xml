@@ -9,7 +9,12 @@
     <string name="tip_amount_label">Tip Amount:</string>
     <string name="total_label">Total:</string>
     <string name="fifteen_percent">15%</string>
+    <string name="eighteen_percent">18%</string>
     <string name="twenty_percent">20%</string>
     <string name="twenty_five_percent">25%</string>
+    <string name="split_label">Split:</string>
+    <string name="per_person_label">Amount per person:</string>
+    <string name="default_zero_value">$0.00</string>
+    <string name="reset_action_label">Reset</string>
 
 </resources>
